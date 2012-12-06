@@ -54,11 +54,11 @@ CFCredentials::set(array(
 
 		// Amazon Web Services Key. Found in the AWS Security Credentials. You can also pass
 		// this value as the first parameter to a service constructor.
-		'key' => 'S3_KEY_GOES_HERE',
+		'key' => $_SERVER['S3_KEY'],
 
 		// Amazon Web Services Secret Key. Found in the AWS Security Credentials. You can also
 		// pass this value as the second parameter to a service constructor.
-		'secret' => 'S3_SECRET_GOES HERE',
+		'secret' => $_SERVER['S3_SECRET'],
 
 		// This option allows you to configure a preferred storage type to use for caching by
 		// default. This can be changed later using the set_cache_config() method.
